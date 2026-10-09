@@ -1,0 +1,24 @@
+
+# Python environment
+.venv/
+venv/
+env/
+.Shashank/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+
+# IDE files
+.vscode/
+
+# Node.js dependencies
+node_modules/
+
+# Local databases
+*.sqlite3
+chroma_db/

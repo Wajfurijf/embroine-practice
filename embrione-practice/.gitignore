@@ -1,0 +1,29 @@
+
+# Python virtual environments
+.Shashank/
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE settings
+.vscode/
+
+# Node.js dependencies
+node_modules/
+
+# Local databases and vector stores
+*.sqlite3
+chroma_db/
+
+# Personal images (optional)
+Shashank.jpg
+mosh.jpg

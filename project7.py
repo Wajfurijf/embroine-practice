@@ -1,0 +1,34 @@
+import random
+import string
+
+def generate_password(length, use_uppercase=True, use_numbers=True, use_symbols=True):
+    characters = string.ascii_lowercase
+
+    if use_uppercase:
+        characters += string.ascii_uppercase
+
+    if use_numbers:
+        characters += string.digits
+
+    if use_symbols:
+        characters += string.punctuation
+
+    password = ''.join(random.choice(characters) for _ in range(length))
+    return password
+
+def main():
+    print("=== Password Generator ===")
+
+    length = int(input("Enter password length: "))
+
+    uppercase = input("Include uppercase letters? (y/n): ").lower() == "y"
+    numbers = input("Include numbers? (y/n): ").lower() == "y"
+    symbols = input("Include symbols? (y/n): ").lower() == "y"
+
+    password = generate_password(length, uppercase, numbers, symbols)
+
+    print("\nGenerated Password:")
+    print(password)
+
+if __name__ == "__main__":
+    main()
